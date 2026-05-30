@@ -1,0 +1,89 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Post - BlogSphere</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/post.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="dashboard-nav">
+
+    <div class="container nav-content">
+
+      <h2>
+        <a href="dashboard.html">BlogSphere</a>
+      </h2>
+
+      <button class="btn" id="backBtn">
+        Back
+      </button>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- POST DETAILS -->
+  <section class="container post-section">
+
+    <div class="post-wrapper">
+
+      <h1 id="postTitle"></h1>
+
+      <div class="post-meta">
+
+        <span id="postAuthor"></span>
+
+        <span id="postDate"></span>
+
+      </div>
+
+      <p id="postContent"></p>
+
+    </div>
+
+
+
+    <!-- COMMENTS -->
+    <div class="comments-wrapper">
+
+      <h2>Comments</h2>
+
+      <form id="commentForm">
+
+        <textarea
+          id="commentInput"
+          rows="5"
+          placeholder="Write a comment..."
+          required
+        ></textarea>
+
+        <button class="btn" type="submit">
+          Add Comment
+        </button>
+
+      </form>
+
+      <div id="commentsContainer"></div>
+
+    </div>
+
+  </section>
+<script src="js/main.js"></script>
+  <script src="js/post.js"></script>
+
+</body>
+</html>

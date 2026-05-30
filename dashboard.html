@@ -1,0 +1,178 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard - BlogSphere</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="dashboard-nav">
+
+    <div class="container nav-content">
+
+      <h2>BlogSphere</h2>
+
+      <div class="nav-right">
+
+        <span id="welcomeUser"></span>
+
+        <button class="btn logout-btn" id="logoutBtn">
+          Logout
+        </button>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+<section class="profile-section container">
+
+  <div class="profile-card">
+
+    <div class="profile-left">
+
+      <div class="profile-avatar">
+        👤
+      </div>
+
+      <div>
+
+        <h2 id="profileName"></h2>
+
+        <p>Content Creator</p>
+
+      </div>
+
+    </div>
+
+    <div class="profile-stats">
+
+      <div>
+        <h3 id="totalPosts">0</h3>
+        <span>Posts</span>
+      </div>
+
+      <div>
+        <h3 id="totalLikes">0</h3>
+        <span>Likes</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  <!-- CREATE POST -->
+  <section class="create-post-section container">
+
+    <div class="create-post-card">
+
+      <h2>Create Blog Post</h2>
+
+      <form id="postForm">
+
+        <input
+          type="text"
+          id="postTitle"
+          placeholder="Post Title"
+          required
+        >
+
+        <textarea
+          id="postContent"
+          rows="6"
+          placeholder="Write your content..."
+          required
+        ></textarea>
+        <div class="upload-area">
+
+  <label for="postImage" class="upload-label">
+
+    <div class="upload-content">
+
+      <div class="upload-icon">
+        📷
+      </div>
+
+      <h3>Upload Photo</h3>
+
+      <p>
+        Drag & drop or click to upload image
+      </p>
+
+    </div>
+
+  </label>
+
+  <input
+    type="file"
+    id="postImage"
+    accept="image/*"
+    hidden
+  >
+
+  <img id="imagePreview">
+
+</div>
+        <button type="submit" class="btn">
+          Publish Post
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- POSTS -->
+  <section class="posts-section container">
+
+    <div class="posts-header">
+
+  <h2 class="section-title">
+    Latest Posts
+  </h2>
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search posts..."
+  >
+
+</div>
+ <div id="postsContainer" class="posts-grid"></div>
+  </section>
+<footer class="dashboard-footer">
+
+  <div class="container">
+
+    <h2>BlogSphere</h2>
+
+    <p>
+      © 2026 BlogSphere. Built with ❤️ by Praneeth Reddy
+    </p>
+
+  </div>
+
+</footer>
+<script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>
