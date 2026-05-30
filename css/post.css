@@ -1,0 +1,70 @@
+.post-section{
+  padding:50px 0;
+}
+
+.post-wrapper{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:40px;
+  border-radius:20px;
+  margin-bottom:40px;
+  backdrop-filter:blur(10px);
+}
+
+.post-wrapper h1{
+  margin-bottom:20px;
+  font-size:40px;
+}
+
+.post-meta{
+  display:flex;
+  gap:20px;
+  color:#cbd5e1;
+  margin-bottom:30px;
+}
+
+.post-wrapper p{
+  line-height:1.9;
+  color:#e2e8f0;
+}
+
+.comments-wrapper{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+}
+
+.comments-wrapper h2{
+  margin-bottom:20px;
+}
+
+#commentForm textarea{
+  width:100%;
+  padding:15px;
+  border:none;
+  outline:none;
+  border-radius:12px;
+  resize:none;
+  margin-bottom:15px;
+  background:rgba(255,255,255,0.08);
+  color:white;
+}
+
+.comment-card{
+  margin-top:20px;
+  padding:20px;
+  border-radius:15px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.comment-card h4{
+  margin-bottom:10px;
+}
+
+.comment-card p{
+  color:#cbd5e1;
+  line-height:1.7;
+}
